@@ -26,7 +26,7 @@ Este software foi utilizado no seguinte artigo acadêmico:
 
 **Título do Artigo**: "Improvement of Security Systems by Keystroke Dynamics of Passwords"  
 **Publicado em**: *International Journal of Computer Science and Information Security (IJCSIS)*  
-**Autores**: Leonardo Janeis de Melo e Heleno Murilo Campeão Vale 
+**Autores**: Leonardo Janeis de Melo e Heleno Murilo Campeão Vale
 **Link**: [Acesse o artigo aqui](https://d1wqtxts1xzle7.cloudfront.net/55691451/Journal_of_Computer_Science_IJCSIS_September_2017_Full_Volume.pdf?1517495118=&response-content-disposition=inline%3B+filename%3DJournal_of_Computer_Science_IJCSIS_Septe.pdf&Expires=1736812949&Signature=UCqrqVLWhd1FT-WEKcp4s7uzFM10pJH3zFX4pHajqxVkj7EeSN~tKdzvKIyEa~CBH78vyl4Rbt~Pkk6od6dQVtDdYogLgUrgqyrodpTn~GJStP7T3LrH3ZMutlF2P9-1WHldWwtSielRgfzpYWvycRr3QxmXkTgkTF8j6x5xX2l6bPdwy7AEWH1DktjnGml03oCBpHA7Lj7Sav8vRFut-bDLMmnwbw-9ZbmgYEgN1fTBcSK5-ZSM0j3bVpF-e5We~5tM7flsqJSyo5TxBMG941JphqSARF6cQTIkWobYrszFgWbpWqJDVW-gE-xt1NWiCpz81Pfa~tFoQuxtBMrnaQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=169) 
 
 ---
