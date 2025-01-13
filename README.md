@@ -15,6 +15,7 @@ Criar um sistema de autenticação biométrica baseado na dinâmica de digitaç�
 - Coleta de padrões de digitação de usuários em um teclado numérico.
 - Processamento e análise dos dados coletados.
 - Comparação em tempo real do padrão de digitação do usuário com os padrões previamente cadastrados.
+- Sistema de Login.
 - Comunicação eficiente entre o Arduino e o software via RXTX.
 
 ---
@@ -25,7 +26,6 @@ Este software foi utilizado no seguinte artigo acadêmico:
 
 **Título do Artigo**: "Improvement of Security Systems by Keystroke Dynamics of Passwords"  
 **Autores**: Leonardo Janeis de Melo e Heleno Murilo Campeão Vale 
-
 **Publicado em**: *International Journal of Computer Science and Information Security (IJCSIS)*  
 **Link**: [Acesse o artigo aqui](https://d1wqtxts1xzle7.cloudfront.net/55691451/Journal_of_Computer_Science_IJCSIS_September_2017_Full_Volume.pdf?1517495118=&response-content-disposition=inline%3B+filename%3DJournal_of_Computer_Science_IJCSIS_Septe.pdf&Expires=1736812949&Signature=UCqrqVLWhd1FT-WEKcp4s7uzFM10pJH3zFX4pHajqxVkj7EeSN~tKdzvKIyEa~CBH78vyl4Rbt~Pkk6od6dQVtDdYogLgUrgqyrodpTn~GJStP7T3LrH3ZMutlF2P9-1WHldWwtSielRgfzpYWvycRr3QxmXkTgkTF8j6x5xX2l6bPdwy7AEWH1DktjnGml03oCBpHA7Lj7Sav8vRFut-bDLMmnwbw-9ZbmgYEgN1fTBcSK5-ZSM0j3bVpF-e5We~5tM7flsqJSyo5TxBMG941JphqSARF6cQTIkWobYrszFgWbpWqJDVW-gE-xt1NWiCpz81Pfa~tFoQuxtBMrnaQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=169) 
 
@@ -69,16 +69,21 @@ Este software foi utilizado no seguinte artigo acadêmico:
 ## 📊 Amostras de Usuários
 
 O sistema requer pelo menos 30 arquivos de amostras de usuários. Cada arquivo contém a força aplicada a tecla (F), o tempo total de digitação em milissegundos (T), e a tecla digitada. 
+
 Exemplo de arquivo de amostra (user1_sample.txt):
 
 F,164,T,300669,3
 
 Os arquivos de amostras estão localizados na pasta amostras/.
 
+---
+
 ## 📖 Referências
 [Documentação RXTX](https://github.com/arduino/rxtx)
 
-[Arduino Reference](https://chatgpt.com/c/67859445-0e44-800e-83dc-23f630acbb68#:~:text=Documenta%C3%A7%C3%A3o%20RXTX-,Arduino%20Reference,-%F0%9F%93%9C%20Licen%C3%A7a)
+[Arduino Reference](https://store.arduino.cc/products/arduino-uno-rev3?srsltid=AfmBOoqsw2egKcKqWqr116-zqBcWOcaVt5u1zi07cr29sa6iyumgMWD7)
+
+---
 
 ## 🔍 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias no código ou documentação.
