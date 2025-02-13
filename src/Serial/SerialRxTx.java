@@ -12,7 +12,7 @@ import java.util.Enumeration;
 
 /**
  *
- * @author Leonardo
+ * @author Leonardo J. de Melo
  */
 public class SerialRxTx implements SerialPortEventListener {
 
@@ -21,10 +21,8 @@ public class SerialRxTx implements SerialPortEventListener {
     private String appName; //nome da aplicação
     private BufferedReader input; // receber dados
     private OutputStream output;  // enviar dados
-
     private static final int TIME_OUT = 1000; // tempo de espera para comunicacao
     private static int DATA_RATE = 9600;
-
     private String serialPortName = "COM3";
     public String a = "";
 
@@ -45,18 +43,15 @@ public class SerialRxTx implements SerialPortEventListener {
                     System.out.println("Conectado em: " + currPortId.getName());
                     break;
                 }
-
             }
 
             if (portId == null || serialPort == null) {
                 return false;
             }
-
             serialPort.setSerialPortParams(DATA_RATE,
                     SerialPort.DATABITS_8,
                     SerialPort.STOPBITS_1,
                     SerialPort.PARITY_NONE);
-
             serialPort.addEventListener(this);
             serialPort.notifyOnDataAvailable(true);
             status = true;
@@ -64,16 +59,13 @@ public class SerialRxTx implements SerialPortEventListener {
                 Thread.sleep(1000);
 
             } catch (InterruptedException e) {
-               System.out.println("ERRO");
+                System.out.println("ERRO");
                 e.printStackTrace();
-
-            }// Se deu certo , retorna true
-
+            }
         } catch (Exception e) {
-             System.out.println("ERRO");
+            System.out.println("ERRO");
             e.printStackTrace();
             status = false;
-           
         }
 
         return status;
@@ -110,22 +102,12 @@ public class SerialRxTx implements SerialPortEventListener {
                         input = new BufferedReader(
                                 new InputStreamReader(
                                         serialPort.getInputStream()));
-
                     }
-                    
+
                     protocolo.setLeituraComando(input.readLine());
-//                    FileWriter arq = new FileWriter("C:\\Users\\janeis\\Desktop\\DADOOSSSS.txt");
-                    //System.out.println("Chegou: " + protocolo.getLeituraComando());
-                   a += protocolo.getLeituraComando() + "\r\n";
-//                    arq.write(a);
-//
-//                    arq.flush();
-//                    arq.close();
+                    a += protocolo.getLeituraComando() + "\r\n";
                     break;
 
-                    
-                    
-                    
                 default:
                     break;
             }
@@ -133,7 +115,6 @@ public class SerialRxTx implements SerialPortEventListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public Protocolo getProtocolo() {
@@ -159,5 +140,4 @@ public class SerialRxTx implements SerialPortEventListener {
     public void setSerialPortName(String serialPortName) {
         this.serialPortName = serialPortName;
     }
-
 }
